@@ -4,8 +4,8 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -21,4 +21,49 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-gap: 16px;
+}
+
+.gallery__item {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(182, 178, 178);
+  -webkit-box-shadow: 2px 4px 15px -2px rgba(6, 23, 105, 0.43);
+  box-shadow: 2px 4px 15px -2px rgba(6, 23, 105, 0.43);
+}
+
+.gallery__item > img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gallery__item > img:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery__item:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    2px 4px 15px -2px rgba(6, 23, 105, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 2px 4px 15px -2px rgba(6, 23, 105, 0);
 }
