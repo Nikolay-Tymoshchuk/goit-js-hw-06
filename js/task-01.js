@@ -7,9 +7,8 @@ arrayOfCategories.forEach(category => {
     const categoryName = category.querySelector('h2').textContent;
     const numbersOfElementsInSubcategory = category.querySelectorAll('li').length;
 
-    console.log('Category : ', categoryName);    
+    console.log('\nCategory : ', categoryName);    
     console.log('Elements: ', numbersOfElementsInSubcategory);
-
 
     return;
 });
