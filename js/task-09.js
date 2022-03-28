@@ -8,9 +8,6 @@ const colorNuberInHex = document.querySelector('.color');
 
 changeColorBtn.addEventListener('click', () => {
   body.style.backgroundColor = getRandomHexColor();
-
-  const nextColor = getRandomHexColor();
-
   changeColorBtn.style.backgroundColor = body.style.backgroundColor;
   colorNuberInHex.textContent = getRandomHexColor();
 }
