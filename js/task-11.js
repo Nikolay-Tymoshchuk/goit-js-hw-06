@@ -19,7 +19,8 @@ changeColorBtn.addEventListener('click', () => {
     body.style.backgroundColor = arr[1];
     changeColorBtn.style.backgroundColor = arr[0];
     colorNuberInHex.textContent = arr[1];
-    console.log('arr :>> ', arr);
+  console.log('Current button color ', arr[0]);
+  console.log('Current body color ', arr[1]);
 }
 );
 
